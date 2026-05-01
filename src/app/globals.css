@@ -8,7 +8,7 @@
   --primary: #8b5cf6;
 --primaryViolet:#6B38D4;
   --primary-light: #a78bfa;
-
+--textColor:#475569;
   --primary-dark: #7c3aed;
 
   --secondary: #fb7185;
@@ -16,7 +16,7 @@
   --secondary-light: #fda4af;
 
   --secondary-dark: #f43f5e;
-
+  --surface: #FAF8FF; 
   --surface-dim: #d2d9f4;
 
   --surface-bright: #ffffff;
@@ -32,7 +32,7 @@
 
   --outline: #e2e8f0;
 
-  --shadow: rgba(139, 92, 246, 0.08);
+  --shadowColor: rgba(139, 92, 246, 0.08);
 }
 
 /* /* Lumina Learning (Violet & Rose) Color Palette /
@@ -47,7 +47,7 @@
   --secondary-dark: #F43F5E;  / Rose 500 
 
   /* Surface / Background Colors /
-  --surface: #FAF8FF;        / Very light violet/white /
+       / Very light violet/white /
   --surface-dim: #D2D9F4;    / Muted background /
   --surface-bright: #FFFFFF; / Pure white /
   --surface-container: #F2F3FF; / Card/Section backgrounds */
@@ -61,3 +61,4 @@
   --outline: #E2E8F0;         / Border colors /
   --shadow: rgba(139, 92, 246, 0.08); / Soft violet shadow */
 /* } */
+

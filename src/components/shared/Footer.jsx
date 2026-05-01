@@ -16,8 +16,8 @@ const Footer = () => {
 
   const gradientTextStyle = {
     background: 'linear-gradient(90deg, #6B38D4 0%, #BA0035 100%)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
+WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
   };
 
   const gradientBgStyle = {
@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[##faf7ff] py-12 px-6 md:px-16 font-sans text-gray-600 ">
+    <footer className="bg-surface py-12 px-6 md:px-16 font-sans text-gray-600 ">
       <div className="max-w-7xl mx-auto">
   
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">

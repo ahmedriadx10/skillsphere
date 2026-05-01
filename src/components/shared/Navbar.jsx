@@ -6,8 +6,9 @@ import { Button } from "@heroui/react";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-5  shadow">
-      {/* brand logo area */}
+    <nav className="shadow ">
+<div className="max-w-7xl mx-auto w-[90%] flex justify-between items-center py-5 ">
+        {/* brand logo area */}
       <div className="flex items-center gap-2 bg-linear-[90deg,#6B38D4_0%,#BA0035_100%] bg-clip-text text-transparent">
         <Image
           src={scholarShipImg}
@@ -30,6 +31,7 @@ const Navbar = () => {
       {/* <div className="md:hidden">
         <DropDownBar />
       </div> */}
+</div>
     </nav>
   );
 };
