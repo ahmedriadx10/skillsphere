@@ -13,7 +13,7 @@ const PopularCourseCard = ({course}) => {
 <div className="relative rounded-t-2xl border h-60 w-full  overflow-hidden">
 <Image src={image} alt={title} fill  className="object-cover" loading="eager"       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"         />
 
-<Chip variant="soft" className="absolute right-2 top-2 bg-linear-[90deg,#6B38D4_0%,#BA0035_100%] uppercase tracking-widest text-white ">{category}</Chip>
+<Chip  className="backdrop-blur-3xl bg-[#ffffff10] text-accent absolute  right-2 top-2 uppercase tracking-widest  ">{category}</Chip>
 
 </div>
 
