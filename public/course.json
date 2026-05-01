@@ -1,0 +1,294 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "Jhankar Mahbub",
+    "instructor_role": "Lead Instructor",
+    "instructor_img": "https://i.ibb.co.com/B2qZSRND/jhakar-vaia-2.jpg",
+    "duration": "20 Hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "category": "Development",
+    "description": "Learn full-stack web development from scratch with modern technologies like React, Node, and more. Master the tools that power the modern web.",
+    "image": "https://i.ibb.co.com/nHF3fpR/complete-web-bootcamp-ph.jpg",
+    "price": 149.00,
+    "old_price": 199.00,
+    "what_will_learn": [
+      "Master HTML5 & CSS3 layout techniques like Flexbox and Grid.",
+      "Build dynamic applications using JavaScript and modern React Hooks.",
+      "Develop robust backend servers with Node.js and Express.",
+      "Architect and manage relational and NoSQL databases effectively."
+    ],
+    "curriculum": [
+      {"chapter": 1, "title": "Introduction to the Web", "lessons": 4, "time": "45m"},
+      {"chapter": 2, "title": "Frontend Fundamentals: CSS & JS", "lessons": 12, "time": "4h 20m"},
+      {"chapter": 3, "title": "Advanced JavaScript & React", "lessons": 18, "time": "8h 15m"},
+      {"chapter": 4, "title": "Full Stack Deployment", "lessons": 6, "time": "3h 40m"}
+    ],
+    "features": [
+      "20 hours on-demand video",
+      "12 coding exercises",
+      "24 downloadable resources",
+      "Certificate of completion"
+    ]
+  },
+{
+  "id": 2,
+  "title": "Next Level Web Development",
+  "instructor": "Mezbaul Abedin Persian",
+  "instructor_role": "Lead Instructor (Next Level)",
+  "instructor_img": "https://i.ibb.co.com/RTR8g4RY/mezbaul-abedin-vaia-next-level.jpg",
+  "duration": "40 Hours",
+  "rating": 5.0,
+  "level": "Advanced",
+  "category": "Development",
+  "description": "Master industrial-level development with Next.js 15, TypeScript, and Modular Architecture. Designed for developers who want to reach the top 1% in the industry.",
+  "image": "https://i.ibb.co.com/prz0VLQz/Gemini-Generated-Image-21f28g21f28g21f2.png",
+  "price": 199.00,
+  "old_price": 299.00,
+  "what_will_learn": [
+    "Professional-grade TypeScript for large-scale applications.",
+    "Mastering Next.js 15 App Router, Server Actions, and Optimization.",
+    "Industrial Modular Architecture and Clean Code principles.",
+    "Advanced State Management with Redux Toolkit and RTK Query."
+  ],
+  "curriculum": [
+    { "chapter": 1, "title": "Mastering TypeScript", "lessons": 12, "time": "6h 40m" },
+    { "chapter": 2, "title": "Advanced Next.js Architecture", "lessons": 18, "time": "10h 15m" },
+    { "chapter": 3, "title": "Redux & State Management", "lessons": 15, "time": "8h 30m" },
+    { "chapter": 4, "title": "Building a Full-Scale Industrial Project", "lessons": 25, "time": "15h 00m" }
+  ],
+  "features": [
+    "40 hours high-intensity training",
+    "Real-world industrial projects",
+    "Expert conceptual sessions",
+    "Global standard certificate"
+  ]
+},
+
+  {
+    "id": 3,
+    "title": "Python for Data Science & AI",
+    "instructor": "Sarah Wilson",
+    "instructor_role": "Data Scientist",
+    "instructor_img": "https://i.ibb.co.com/MyKw3JMj/Ellipse-1-3.png",
+    "duration": "25 Hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "category": "Development",
+    "description": "Learn Python libraries like NumPy, Pandas, and Matplotlib to analyze data and build AI models.",
+    "image": "https://i.ibb.co.com/kgJ5qHYH/Chat-GPT-Image-Apr-30-2026-08-08-11-PM.png",
+    "price": 179.00,
+    "old_price": 250.00,
+    "what_will_learn": [
+      "Clean and manipulate large datasets with Pandas.",
+      "Visualize data insights using Seaborn and Matplotlib.",
+      "Build basic Machine Learning models.",
+      "Automate data-driven tasks with Python scripts."
+    ],
+    "curriculum": [
+      {"chapter": 1, "title": "Python Basics for Data", "lessons": 8, "time": "3h 20m"},
+      {"chapter": 2, "title": "Data Analysis with Pandas", "lessons": 15, "time": "8h 40m"},
+      {"chapter": 3, "title": "Intro to Machine Learning", "lessons": 10, "time": "7h 15m"}
+    ],
+    "features": [
+      "25 hours on-demand video",
+      "Real-world data projects",
+      "Weekly live Q&A sessions",
+      "Certificate of completion"
+    ]
+  },
+    {
+    "id": 4,
+    "title": "Digital Marketing Strategy 2026",
+    "instructor": "David Miller",
+    "instructor_role": "Marketing Expert",
+    "instructor_img": "https://i.ibb.co.com/Zpd6knMK/marketing-instructor.avif",
+    "duration": "12 Hours",
+    "rating": 4.7,
+    "level": "Beginner",
+    "category": "Marketing",
+    "description": "A comprehensive guide to SEO, SEM, and Social Media Marketing for growing brands.",
+    "image": "https://i.ibb.co.com/vxZNMt4p/Chat-GPT-Image-Apr-30-2026-08-09-20-PM.png",
+    "price": 79.00,
+    "old_price": 120.00,
+    "what_will_learn": [
+      "Advanced SEO strategies for ranking in 2026.",
+      "Creating high-converting Facebook and Google Ads.",
+      "Email marketing automation techniques.",
+      "Content strategy and brand storytelling."
+    ],
+    "curriculum": [
+      {"chapter": 1, "title": "SEO Fundamentals", "lessons": 6, "time": "2h 15m"},
+      {"chapter": 2, "title": "Social Media Growth", "lessons": 9, "time": "4h 30m"},
+      {"chapter": 3, "title": "Analytics and Reporting", "lessons": 5, "time": "2h 45m"}
+    ],
+    "features": [
+      "12 hours on-demand video",
+      "Case studies of successful brands",
+      "Access to premium marketing tools",
+      "Certificate of completion"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Mastering Graphic Design with Canva",
+    "instructor": "Emily Blunt",
+    "instructor_role": "Visual Designer",
+    "instructor_img": "https://i.ibb.co.com/9Mgcwwt/photo-1580489944761-15a19d654956.avif",
+    "duration": "8 Hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "category": "Design",
+    "description": "Create professional social media posts, logos, and presentations using Canva.",
+    "image": "https://i.ibb.co.com/ccLtsg8J/Gemini-Generated-Image-1u82pd1u82pd1u82.png",
+    "price": 49.00,
+    "old_price": 89.00,
+    "what_will_learn": [
+      "Design principles: Color, Typography, and Space.",
+      "Creating professional branding kits.",
+      "Advanced Canva features and shortcuts.",
+      "Video editing for social media within Canva."
+    ],
+    "curriculum": [
+      {"chapter": 1, "title": "Getting Started with Canva", "lessons": 4, "time": "1h 10m"},
+      {"chapter": 2, "title": "Branding & Logo Design", "lessons": 6, "time": "3h 20m"},
+      {"chapter": 3, "title": "Social Media Content Creation", "lessons": 5, "time": "2h 45m"}
+    ],
+    "features": [
+      "8 hours on-demand video",
+      "50+ Editable templates",
+      "Access to private community",
+      "Certificate of completion"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Next.js 15 Deep Dive",
+    "instructor": "Ahashan Habib Utsho",
+    "instructor_role": "Full Stack Engineer",
+    "instructor_img": "https://i.ibb.co.com/QvY50qDb/utso-vaia-img.jpg",
+    "duration": "18 Hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "category": "Development",
+    "description": "Build high-performance web apps using Next.js App Router, Server Actions, and SSR.",
+    "image": "https://i.ibb.co.com/C3XXpVFZ/Gemini-Generated-Image-d82tbcd82tbcd82t.png",
+    "price": 129.00,
+    "old_price": 180.00,
+    "what_will_learn": [
+      "Optimizing Core Web Vitals with Next.js.",
+      "Implementing Authentication with NextAuth.js.",
+      "Complex state management with Server Components.",
+      "Integrating Stripe for global payments."
+    ],
+    "curriculum": [
+      {"chapter": 1, "title": "App Router Essentials", "lessons": 7, "time": "2h 50m"},
+      {"chapter": 2, "title": "Data Fetching & Mutations", "lessons": 11, "time": "6h 15m"},
+      {"chapter": 3, "title": "Performance Optimization", "lessons": 9, "time": "5h 40m"}
+    ],
+    "features": [
+      "18 hours on-demand video",
+      "Full source code access",
+      "Discord support access",
+      "Certificate of completion"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Copywriting for Entrepreneurs",
+    "instructor": "Robert Green",
+    "instructor_role": "Content Strategist",
+    "instructor_img": "https://i.ibb.co.com/svz8YBQk/photo-1500648767791-00dcc994a43e.avif",
+    "duration": "10 Hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "category": "Marketing",
+    "description": "Learn the art of persuasion and write copy that sells your products and services.",
+    "image": "https://i.ibb.co.com/pBGVgd1s/Chat-GPT-Image-Apr-30-2026-08-14-58-PM.png",
+    "price": 59.00,
+    "old_price": 99.00,
+    "what_will_learn": [
+      "Understanding customer pain points.",
+      "Writing headlines that grab attention.",
+      "The psychology of Call to Actions (CTAs).",
+      "Writing high-converting landing pages."
+    ],
+    "curriculum": [
+      {"chapter": 1, "title": "The Psychology of Writing", "lessons": 5, "time": "2h 10m"},
+      {"chapter": 2, "title": "Headlines & Hooks", "lessons": 8, "time": "4h 00m"},
+      {"chapter": 3, "title": "Sales Page Structure", "lessons": 4, "time": "3h 15m"}
+    ],
+    "features": [
+      "10 hours on-demand video",
+      "Copywriting checklists",
+      "Worksheets & Exercises",
+      "Certificate of completion"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Motion Graphics with After Effects",
+    "instructor": "Kevin Hart",
+    "instructor_role": "Motion Designer",
+    "instructor_img": "https://i.ibb.co.com/trrGwCP/photo-1534030347209-467a5b0ad3e6.avif",
+    "duration": "22 Hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "category": "Design",
+    "description": "Create amazing 2D and 3D animations and visual effects for your video projects.",
+    "image": "https://i.ibb.co.com/5XHLH3yF/Chat-GPT-Image-Apr-30-2026-08-13-19-PM.png",
+    "price": 159.00,
+    "old_price": 220.00,
+    "what_will_learn": [
+      "Mastering the After Effects timeline.",
+      "Working with keyframes and easing.",
+      "Creating professional logo animations.",
+      "Visual effects (VFX) fundamentals."
+    ],
+    "curriculum": [
+      {"chapter": 1, "title": "Interface and Basics", "lessons": 6, "time": "2h 45m"},
+      {"chapter": 2, "title": "Animating Shapes & Text", "lessons": 14, "time": "10h 30m"},
+      {"chapter": 3, "title": "Rendering and Exporting", "lessons": 5, "time": "3h 15m"}
+    ],
+    "features": [
+      "22 hours on-demand video",
+      "Project project files (.aep)",
+      "Lifetime access",
+      "Certificate of completion"
+    ]
+  },
+
+  {
+    "id": 9,
+    "title": "Advanced UI/UX Design Mastery",
+    "instructor": "Jane Smith",
+    "instructor_role": "Senior Designer",
+    "instructor_img": "https://i.ibb.co.com/k6DY1j7w/photo-1560250097-0b93528c311a.avif",
+    "duration": "15 Hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "category": "Design",
+    "description": "Master Figma, user psychology, and modern design systems to create stunning user interfaces.",
+    "image": "https://i.ibb.co.com/PZY2z0Pg/Chat-GPT-Image-Apr-30-2026-08-05-38-PM.png",
+    "price": 99.00,
+    "old_price": 149.00,
+    "what_will_learn": [
+      "Deep dive into Figma auto-layouts and components.",
+      "Understand User Research and Persona building.",
+      "Create high-fidelity interactive prototypes.",
+      "Design systems for scalable products."
+    ],
+    "curriculum": [
+      {"chapter": 1, "title": "Design Thinking Process", "lessons": 5, "time": "1h 30m"},
+      {"chapter": 2, "title": "Figma Advanced Tools", "lessons": 10, "time": "5h 10m"},
+      {"chapter": 3, "title": "Prototyping & Testing", "lessons": 8, "time": "4h 45m"}
+    ],
+    "features": [
+      "15 hours on-demand video",
+      "Design assets & templates",
+      "Personal portfolio review",
+      "Certificate of completion"
+    ]
+  }
+]

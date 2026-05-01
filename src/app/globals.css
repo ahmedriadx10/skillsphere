@@ -1,26 +1,63 @@
 @import "tailwindcss";
-
+@import "@heroui/styles"; 
+/* Lumina Learning (Violet & Rose) Color Palette  */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+  /* / Brand Colors / */
+  --primary: #8b5cf6;
+--primaryViolet:#6B38D4;
+  --primary-light: #a78bfa;
+
+  --primary-dark: #7c3aed;
+
+  --secondary: #fb7185;
+--secondaryPink:#BA0035;
+  --secondary-light: #fda4af;
+
+  --secondary-dark: #f43f5e;
+
+  --surface-dim: #d2d9f4;
+
+  --surface-bright: #ffffff;
+
+  --surface-container: #f2f3ff;
+
+  /* /* Text Colors / */
+  --on-surface: #0f172a;
+
+  --on-surface-variant: #64748b;
+
+  --on-primary: #ffffff;
+
+  --outline: #e2e8f0;
+
+  --shadow: rgba(139, 92, 246, 0.08);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* /* Lumina Learning (Violet & Rose) Color Palette /
+:root {
+  / Brand Colors /
+  --primary: #8B5CF6;       / Violet 600 /
+  --primary-light: #A78BFA; / Violet 400 /
+  --primary-dark: #7C3AED;  / Violet 700 */
+/* 
+  /* --secondary: #FB7185;     /* Rose 400 / 
+  --secondary-light: #FDA4AF; / Rose 300 /
+  --secondary-dark: #F43F5E;  / Rose 500 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* Surface / Background Colors /
+  --surface: #FAF8FF;        / Very light violet/white /
+  --surface-dim: #D2D9F4;    / Muted background /
+  --surface-bright: #FFFFFF; / Pure white /
+  --surface-container: #F2F3FF; / Card/Section backgrounds */
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Text Colors /
+  --on-surface: #0F172A;      / Slate 900 (Main text) /
+  --on-surface-variant: #64748B; / Slate 500 (Secondary text) /
+  --on-primary: #FFFFFF;      / Text on primary buttons */
+
+/* Accents & Borders /
+  --outline: #E2E8F0;         / Border colors /
+  --shadow: rgba(139, 92, 246, 0.08); / Soft violet shadow */
+/* } */
