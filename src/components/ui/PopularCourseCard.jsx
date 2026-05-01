@@ -1,4 +1,4 @@
-import { Button } from "@heroui/react";
+import { Avatar, Button, Chip } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaRegClock, FaStar } from "react-icons/fa";
@@ -12,6 +12,9 @@ const PopularCourseCard = ({course}) => {
 
 <div className="relative rounded-t-2xl border h-60 w-full  overflow-hidden">
 <Image src={image} alt={title} fill  className="object-cover" loading="eager"       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"         />
+
+<Chip variant="soft" className="absolute right-2 top-2 bg-linear-[90deg,#6B38D4_0%,#BA0035_100%] uppercase tracking-widest text-white ">{category}</Chip>
+
 </div>
 
 
@@ -35,10 +38,14 @@ const PopularCourseCard = ({course}) => {
 
 {/* instructor and duration area */}
 
-<div className="flex justify-between  pb-5 px-6">
+<div className="flex justify-between flex-wrap gap-4 pb-5 px-6">
 
 <div className="flex gap-2 items-center">
-    <Image src={instructor_img} alt={instructor} width={32} height={32} className="rounded-full"/>
+    {/* <Image src={instructor_img} alt={instructor} width={32} height={'32'} className="rounded-full aspect-square"/> */}
+      <Avatar>
+        <Avatar.Image alt={instructor} src={instructor_img} />
+        <Avatar.Fallback>{instructor[0].concat(instructor[1]).toUpperCase()}</Avatar.Fallback>
+      </Avatar>
 <p className="font-semibold text-[#334155]">{instructor}</p>
 </div>
 
