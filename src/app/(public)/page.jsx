@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero';
+import PoupularCourses from '@/components/PoupularCourses';
 import React from 'react';
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <div>
 
       <Hero/>
+      <PoupularCourses/>
     </div>
   );
 };

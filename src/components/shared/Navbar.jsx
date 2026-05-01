@@ -6,7 +6,7 @@ import { Button } from "@heroui/react";
 
 const Navbar = () => {
   return (
-    <nav className="shadow ">
+    <nav className=" shadow ">
 <div className="max-w-7xl mx-auto w-[90%] flex justify-between items-center py-5 ">
         {/* brand logo area */}
       <div className="flex items-center gap-2 bg-linear-[90deg,#6B38D4_0%,#BA0035_100%] bg-clip-text text-transparent">

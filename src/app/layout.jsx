@@ -24,7 +24,9 @@ export default function RootLayout({ children }) {
       <body className={`${manropeFont.className} `}>
         
       <Navbar/>
-        {children}
+
+          {children}
+
         <Footer/>
         </body>
     </html>

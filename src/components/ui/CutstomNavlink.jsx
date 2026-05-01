@@ -6,7 +6,7 @@ const CutstomNavlink = ({href,children}) => {
 const path=usePathname()
 
   return (
-    <Link href={href} className={`font-semibold ${path===href?'border-b-2 border-(--secondaryPink)':''}`}>
+    <Link href={href} className={`font-semibold ${path===href?'text-(--primaryViolet)':''}`}>
       {children}
     </Link>
   );
