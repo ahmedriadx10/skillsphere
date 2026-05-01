@@ -2,6 +2,7 @@ import Hero from '@/components/Hero';
 import InstructorArea from '@/components/InstructorArea';
 import LearningTips from '@/components/LearningTips';
 import PoupularCourses from '@/components/PoupularCourses';
+import { StudentImpact } from '@/components/StudentImpact';
 import React from 'react';
 
 const HomePage = () => {
@@ -12,6 +13,7 @@ const HomePage = () => {
       <PoupularCourses/>
       <LearningTips/>
       <InstructorArea/>
+      <StudentImpact/>
     </div>
   );
 };

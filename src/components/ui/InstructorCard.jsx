@@ -4,7 +4,7 @@ import React from 'react';
 const InstructorCard = ({instructor}) => {
   const {id,name,role,image,bio,badges, is_master_instructor}=instructor
   return (
-<div className={`max-w-md md:max-w-82 bg-white rounded-4xl shadow overflow-hidden  lg:${is_master_instructor?'relative lg:top-5':''}`}>
+<div className={`max-w-md md:max-w-82 border border-(--outline) bg-white rounded-4xl shadow overflow-hidden  ${is_master_instructor?'xl:relative lg:top-10':''}`}>
       {/* Image Section */}
       <div className="relative h-70 w-full  overflow-hidden">
         <Image
