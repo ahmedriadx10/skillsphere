@@ -40,7 +40,7 @@ const Navbar =async () => {
  {session?.user?<div className="flex gap-2.5 items-center">
     <Avatar className="outline-2 outline-(--outline)" size="lg">
         <Avatar.Image  alt={session?.user?.name} className="" src={session?.user?.image} referrerPolicy="no-referrer"/>
-        <Avatar.Fallback>{session?.user?.name.slice(0,2).toLocaleUpperCase()}</Avatar.Fallback>
+        <Avatar.Fallback>{session?.user?.name.slice(0,2).toUpperCase()}</Avatar.Fallback>
       </Avatar>
   
   <SignOutBtn >Sign out</SignOutBtn></div>: <div className="flex gap-4"><Link href={'/login'}>
@@ -53,7 +53,7 @@ const Navbar =async () => {
       <div className="flex gap-2.5 items-center md:hidden">
      {session?.user &&    <Avatar className="outline-2 outline-(--outline)" size="lg">
         <Avatar.Image  alt={session?.user?.name} className="" src={session?.user?.image} referrerPolicy="no-referrer"/>
-        <Avatar.Fallback>{session?.user?.name.slice(0,2).toLocaleUpperCase()}</Avatar.Fallback>
+        <Avatar.Fallback>{session?.user?.name.slice(0,2).toUpperCase()}</Avatar.Fallback>
       </Avatar>}
        <MobileMenu/>
 

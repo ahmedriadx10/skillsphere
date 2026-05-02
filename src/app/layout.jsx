@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <Navbar/>
 
           {children}
-  <Toast.Provider placement="top" />
+  {/* <Toast.Provider placement="top" /> */}
         <Footer/>
         </body>
     </html>
