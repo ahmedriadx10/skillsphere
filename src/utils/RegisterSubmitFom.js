@@ -1,9 +1,9 @@
 export const SubmitRegister=(e)=>{
   e.preventDefault()
 
-  const formData=new FormData(e.target)
+ const formData=new FormData(e.currentTarget)
 
-  const exactFromData=Object.entries(formData.entries())
+  const exactFromData=Object.fromEntries(formData.entries())
+console.log(exactFromData)
 
-  console.log(exactFromData)
 }
