@@ -5,7 +5,7 @@ import { loginHandle} from "@/utils/LoginHandle";
 // import {Check} from "`@gravity-ui/icons`";
 import {
   Button,
-  Description,
+
   FieldError,
   Form,
   Input,
@@ -16,7 +16,7 @@ import { Icon } from "@iconify/react";
 import Link from "next/link";
 
 import { useState } from "react";
-import { FaEye, FaEyeSlash, FaUser } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 export default function LoginPage() {
   const [eye, setEye] = useState(false);

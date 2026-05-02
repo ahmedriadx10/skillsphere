@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={` h-full antialiased`}
     >
-      <body className={`${manropeFont.className} `}>
+      <body className={`${manropeFont.className} overflow-x-hidden`}>
         
       <Navbar/>
 
