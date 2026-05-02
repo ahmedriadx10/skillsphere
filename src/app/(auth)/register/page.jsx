@@ -1,6 +1,7 @@
 "use client";
 
-import { SubmitRegister } from "@/utils/RegisterSubmitFom";
+import { authClient } from "@/lib/auth-client";
+import { submitRegister } from "@/utils/RegisterSubmitFom";
 // import {Check} from "`@gravity-ui/icons`";
 import {
   Button,
@@ -10,17 +11,50 @@ import {
   Input,
   Label,
   TextField,
+  toast,
 } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { FaEye, FaEyeSlash, FaUser } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+
 
 export default function RegisterPage() {
   const [eye, setEye] = useState(false);
-
+  const route = useRouter();
   const eyeClick = () => {
     setEye(!eye);
+  };
+
+  const submitRegister = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+
+    const exactFromData = Object.fromEntries(formData.entries());
+
+    console.log(exactFromData);
+
+    const { data, error } = await authClient.signUp.email(
+      {
+        ...exactFromData,
+      },
+      {
+        onSuccess: () => {
+          route.push("/");
+        },
+        onError: () => {},
+      },
+    );
+    // if (data) {
+    //   toast.success("Sign Up Successfull");
+    // }
+
+    // if (error) {
+    //   toast.danger(`${error.message}`);
+    //   console.log(error);
+    // }
   };
 
   return (
@@ -39,7 +73,7 @@ export default function RegisterPage() {
         <Form
           className="flex  flex-col gap-4"
           render={(props) => <form {...props} data-custom="foo" />}
-          onSubmit={SubmitRegister}
+          onSubmit={submitRegister}
         >
           <TextField isRequired name="name" type="text">
             <Label>Full Name</Label>
@@ -112,7 +146,11 @@ export default function RegisterPage() {
           </TextField>
 
           <div className="flex gap-2">
-            <Button type="submit" fullWidth className={'bg-linear-[90deg,#6B38D4_0%,#BA0035_100%]'}>
+            <Button
+              type="submit"
+              fullWidth
+              className={"bg-linear-[90deg,#6B38D4_0%,#BA0035_100%]"}
+            >
               Sign up
             </Button>
           </div>

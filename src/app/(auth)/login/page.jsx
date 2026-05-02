@@ -1,6 +1,6 @@
-'use client'
+"use client";
 import { LoginHandle } from "@/utils/LoginHandle";
-import { SubmitRegister } from "@/utils/RegisterSubmitFom";
+
 // import {Check} from "`@gravity-ui/icons`";
 import {
   Button,
@@ -13,6 +13,7 @@ import {
 } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+
 import { useState } from "react";
 import { FaEye, FaEyeSlash, FaUser } from "react-icons/fa";
 
@@ -23,30 +24,27 @@ export default function LoginPage() {
     setEye(!eye);
   };
 
+
   return (
     <section className="py-20">
-
       {/* register area */}
 
       <div className="rounded-4xl  p-8 md:p-12 max-w-xl mx-auto w-[90%] border border-(--outline)">
+        <div className="text-center space-y-4 mb-10">
+          <h4 className="text-4xl font-bold text-(--on-surface)">
+            Join SkillSphere Today
+          </h4>
 
-<div className="text-center space-y-4 mb-10">
-     <h4 className="text-4xl font-bold text-(--on-surface)">
-          Join SkillSphere Today
-        </h4>
-         
-        <p className="text-(--textVariant)">
-          Start your premium learning journey with world-class mentors.
-        </p>
-</div>
+          <p className="text-(--textVariant)">
+            Start your premium learning journey with world-class mentors.
+          </p>
+        </div>
 
         <Form
           className="flex  flex-col gap-4"
           render={(props) => <form {...props} data-custom="foo" />}
           onSubmit={LoginHandle}
         >
-   
-
           {/* email field */}
           <TextField
             isRequired
@@ -67,8 +65,6 @@ export default function LoginPage() {
             />
             <FieldError />
           </TextField>
-
-      
 
           <TextField
             className={"relative"}
@@ -102,8 +98,12 @@ export default function LoginPage() {
           </TextField>
 
           <div className="flex gap-2">
-            <Button type="submit" fullWidth className={'bg-linear-[90deg,#6B38D4_0%,#BA0035_100%]'}>
-             Log in
+            <Button
+              type="submit"
+              fullWidth
+              className={"bg-linear-[90deg,#6B38D4_0%,#BA0035_100%]"}
+            >
+              Log in
             </Button>
           </div>
         </Form>
