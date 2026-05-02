@@ -1,9 +1,22 @@
+import CourseDetailsShow from "@/components/CourseDetailsShow";
+import { courseDataGet } from "@/utils/DataFetcher";
 
-const CourseDetails = () => {
+const CourseDetails = async ({params}) => {
+
+  const {id}=await params
+const courseData=await courseDataGet()
+  const exactCourse=courseData.find((course)=>course.id===Number(id))
+
+ console.log(exactCourse)
+
+
+
   return (
-    <div>
-      CourseDetails
-    </div>
+    <section className="max-w-7xl mx-auto w-[90%] py-12">
+
+<CourseDetailsShow course={exactCourse} />
+
+    </section>
   );
 };
 
