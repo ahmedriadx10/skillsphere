@@ -1,5 +1,5 @@
 "use client";
-import { LoginHandle } from "@/utils/LoginHandle";
+import { loginHandle} from "@/utils/LoginHandle";
 
 // import {Check} from "`@gravity-ui/icons`";
 import {
@@ -43,7 +43,7 @@ export default function LoginPage() {
         <Form
           className="flex  flex-col gap-4"
           render={(props) => <form {...props} data-custom="foo" />}
-          onSubmit={LoginHandle}
+          onSubmit={loginHandle}
         >
           {/* email field */}
           <TextField
