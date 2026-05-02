@@ -1,4 +1,5 @@
 "use client";
+import { authClient } from "@/lib/auth-client";
 import { loginHandle} from "@/utils/LoginHandle";
 
 // import {Check} from "`@gravity-ui/icons`";
@@ -23,6 +24,14 @@ export default function LoginPage() {
   const eyeClick = () => {
     setEye(!eye);
   };
+
+
+  const handleGoogleSignIn=async()=>{
+const data=authClient.signIn.social({
+  provider:'google'
+})
+
+  }
 
 
   return (
@@ -117,7 +126,7 @@ export default function LoginPage() {
             <p className=" border w-[50%] md:w-full "></p>
           </div>
 
-          <Button className="w-full border border-(--outline) bg-white">
+          <Button className="w-full border border-(--outline) bg-white" onPress={handleGoogleSignIn}>
             <Icon icon="devicon:google" />
             <span className="text-(--on-surface)">Login with Google</span>
           </Button>

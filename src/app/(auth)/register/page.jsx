@@ -1,7 +1,7 @@
 "use client";
 
 import { authClient } from "@/lib/auth-client";
-import { submitRegister } from "@/utils/RegisterSubmitFom";
+
 // import {Check} from "`@gravity-ui/icons`";
 import {
   Button,
@@ -56,6 +56,19 @@ export default function RegisterPage() {
     //   console.log(error);
     // }
   };
+
+  const handleGoogleSignUp=async()=>{
+ 
+  const data = await authClient.signIn.social({
+    provider: "google",
+  });
+
+
+
+
+
+  }
+
 
   return (
     <section className="py-20">
@@ -165,7 +178,7 @@ export default function RegisterPage() {
             <p className=" border w-[50%] md:w-full "></p>
           </div>
 
-          <Button className="w-full border border-(--outline) bg-white">
+          <Button className="w-full border border-(--outline) bg-white" onPress={handleGoogleSignUp} >
             <Icon icon="devicon:google" />
             <span className="text-(--on-surface)">Sign up with Google</span>
           </Button>
