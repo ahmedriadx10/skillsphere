@@ -47,14 +47,16 @@ export default function RegisterPage() {
         onError: () => {},
       },
     );
-    // if (data) {
-    //   toast.success("Sign Up Successfull");
-    // }
+    if (data) {
+      toast.success("Sign Up Successfull");
+      return
+    }
 
-    // if (error) {
-    //   toast.danger(`${error.message}`);
-    //   console.log(error);
-    // }
+    if (error) {
+      toast.danger(`${error.message}`);
+      console.log(error);
+      return
+    }
   };
 
   const handleGoogleSignUp=async()=>{
@@ -64,7 +66,7 @@ export default function RegisterPage() {
   });
 
 
-
+  console.log(data)
 
 
   }

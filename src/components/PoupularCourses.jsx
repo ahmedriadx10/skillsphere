@@ -5,7 +5,7 @@ const PoupularCourses = async () => {
  
   const courseData=await courseDataGet()
 
-  const topCourse=courseData.filter(course=>course.rating===5.0)
+  const topCourse=courseData.filter(course=>course.rating===5)
   console.log(topCourse)
  
   return (

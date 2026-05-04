@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import CutstomNavlink from "./CutstomNavlink";
 import { authClient } from "@/lib/auth-client";
-import { Spinner } from "@heroui/react";
+import {  toast } from "@heroui/react";
 
 import { MdLogout } from "react-icons/md";
 import { useRouter } from "next/navigation";
@@ -27,6 +27,7 @@ export const MobileMenu = () => {
       fetchOptions: {
         onSuccess: () => {
           route.refresh("/");
+          toast.success('Sign out successfull')
         },
       },
     });

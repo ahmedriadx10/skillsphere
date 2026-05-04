@@ -31,6 +31,10 @@ const data=authClient.signIn.social({
   provider:'google'
 })
 
+
+console.log(data)
+
+
   }
 
 

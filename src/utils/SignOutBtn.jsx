@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@heroui/react";
+import { Button, toast } from "@heroui/react";
 import { authClient } from "@/lib/auth-client";
 import { refresh } from "next/cache";
 import { usePathname, useRouter } from "next/navigation";
@@ -15,6 +15,7 @@ const SignOutBtn = ({ children }) => {
     fetchOptions: {
       onSuccess: () => {
 route.refresh('/') 
+toast.success('Sign out successfull')
       },
     },
   });

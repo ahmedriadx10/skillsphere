@@ -22,7 +22,7 @@ const PopularCourseCard = ({course}) => {
 {/* rating and price area */}
 
 <div className="flex justify-between items-center px-6">
-  <p className="flex items-center gap-1 text-orange-600 font-bold "><FaStar className="text-xl"/> <span>{rating===5.0?rating+'.0':rating}</span></p>
+  <p className="flex items-center gap-1 text-orange-600 font-bold "><FaStar className="text-xl"/> <span>{rating===5?rating+'.0':rating}</span></p>
   <h6 className="font-bold text-2xl text-(--primaryViolet)">${price}</h6>
 </div>
 
