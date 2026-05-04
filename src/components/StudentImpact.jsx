@@ -23,17 +23,14 @@ export const StudentImpact= () => {
 heights with SkillSphere.</p>
 </div>
 
-{/* swiper manage */}
+
     <Swiper
-      // install Swiper modules
+
       modules={[Autoplay,FreeMode]}
       spaceBetween={20}
       slidesPerView={'auto'}
 loop={true}
-  // autoplay={{
-  //   delay:0,
-  //   disableOnInteraction:false
-  // }}
+
   autoplay
   freeMode={true}
 

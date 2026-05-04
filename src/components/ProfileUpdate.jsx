@@ -3,11 +3,12 @@
 import { authClient } from "@/lib/auth-client";
 import {
   Button,
-  FieldError,
+ 
   Form,
   Input,
   Label,
   TextField,
+  toast,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
 
@@ -22,7 +23,7 @@ const ProfileUpdate = ({ user }) => {
 
     const exactFormData = Object.fromEntries(formData.entries());
 
-    console.log({ ...exactFormData });
+ 
 
     const { data, error } = await authClient.updateUser({
       ...exactFormData,
@@ -36,7 +37,7 @@ const ProfileUpdate = ({ user }) => {
     }
 
     if (error) {
-      alert("failed to upload");
+      toast.danger("failed to upload");
       return;
     }
   };

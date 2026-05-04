@@ -59,7 +59,7 @@ const NewReleases = () => {
 
   ]
   return (
-    <section className="py-20 bg-linear-[#F2F3FF70,#ffffff] "> 
+    <section className="py-20 bg-linear-[#F2F3FF65,#ffffff] "> 
       <div className="max-w-7xl mx-auto px-6">
         
      

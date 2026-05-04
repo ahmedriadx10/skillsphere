@@ -34,7 +34,7 @@ export default function RegisterPage() {
 
     const exactFromData = Object.fromEntries(formData.entries());
 
-    console.log(exactFromData);
+
 
     const { data, error } = await authClient.signUp.email(
       {
@@ -63,7 +63,6 @@ export default function RegisterPage() {
   });
 
 
-  console.log(data)
 
 
   }

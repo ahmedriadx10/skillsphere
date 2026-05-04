@@ -4,7 +4,7 @@ import Link from "next/link";
 const NewReleasesCard = ({cardData}) => {
   const {image,id,title,  category,  instructor_img,  instructor}=cardData
   return (
-    <div className="relative group  h-full "> {/* Another Overlap & height trick */}
+    <div className="relative group  h-full "> 
              <div className="absolute inset-0 bg-black   transition-all duration-300"></div>
             <div className={`relative text-white p-5 flex flex-col justify-between h-full overflow-hidden`}>
                 <div className="absolute inset-0 z-0 group-hover:scale-105 transition-transform duration-500 ">
@@ -24,7 +24,7 @@ const NewReleasesCard = ({cardData}) => {
                   <div className="flex justify-between items-center">
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-gray-500 overflow-hidden border border-(--outline)">
-                             <img src={instructor_img} alt={instructor} />
+                             <img src={instructor_img} className="object-cover " alt={instructor} />
                         </div>
                         <div>
                           <p className="text-sm font-medium text-gray-200">{instructor}</p>

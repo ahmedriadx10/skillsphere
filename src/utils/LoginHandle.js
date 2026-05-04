@@ -27,7 +27,7 @@ const { data, error } = await authClient.signIn.email({
 
     if (error) {
       toast.danger(`${error.message}`);
-      console.log(error);
+  
       return
     }
 

@@ -15,12 +15,10 @@ const CourseDetailsShow = ({course}) => {
     <div className="">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         
-        {/* বাম পাশের অংশ: কোর্সের বিবরণ */}
+
         <div className="lg:col-span-2">
           <div className="flex items-center gap-3 mb-4">
-            {/* <span className="bg-purple-100 text-purple-700 px-4 py-1 rounded-full text-xs font-bold">
-           
-            </span> */}
+    
             <Chip className='bg-purple-100 text-purple-700'>{category}</Chip>
             <span className="text-pink-500 flex items-center gap-1 font-bold text-sm">
               <FaStar className="mb-0.5" /> {rating}
@@ -87,11 +85,11 @@ const CourseDetailsShow = ({course}) => {
           </section>
         </div>
 
-        {/* ডান পাশের অংশ: সাইডবার */}
+   
         <div className="lg:col-span-1 flex flex-col gap-6">
-          {/* কোর্স প্রিভিউ ইমেজ */}
+  
           <div className=" relative rounded-4xl overflow-hidden shadow-xl ">
-             {/* <img src={image} alt="Preview" className="w-full h-72 object-cover" /> */}
+    
 <div className='relative h-75 w-full'>
   <Image src={image} alt={title} fill className='object-cover'    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 33vw"/>
 </div>
@@ -102,16 +100,14 @@ const CourseDetailsShow = ({course}) => {
              </div>
           </div>
 
-          {/* প্রসিং কার্ড */}
+
           <div className="bg-white p-5 xl:p-10 rounded-4xl shadow-sm border border-gray-100">
             <div className="flex items-center gap-3 mb-8">
               <span className="text-4xl font-black text-gray-900">${price}</span>
               <span className="text-gray-400 line-through font-bold text-xl">${old_price}</span>
             </div>
             
-            {/* <button className="w-full bg-[#5D46E8] text-white py-5 rounded-[20px] font-bold text-xl hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200 mb-4">
-              Enroll Now
-            </button> */}
+       
             <Button size='lg' className={'bg-linear-[90deg,#6B38D4_0%,#BA0035_100%] text-white mb-4 w-full'}>Enroll Now</Button>
 
             <p className="text-center text-xs text-gray-400 font-semibold mb-10 tracking-wide">30-Day Money-Back Guarantee</p>
@@ -133,7 +129,7 @@ const CourseDetailsShow = ({course}) => {
             </div>
           </div>
 
-          {/* ছোট স্ট্যাটাস কার্ড */}
+      
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-[#F3F6FF] p-8 lg:p-5 xl:p-8 rounded-[30px] flex flex-col justify-center  text-center">
               <IoStatsChart className="mx-auto text-pink-500 mb-3" size={28} />

@@ -2,7 +2,7 @@
 import { authClient } from "@/lib/auth-client";
 import { loginHandle} from "@/utils/LoginHandle";
 
-// import {Check} from "`@gravity-ui/icons`";
+
 import {
   Button,
 
@@ -32,7 +32,7 @@ const data=authClient.signIn.social({
 })
 
 
-console.log(data)
+
 
 
   }

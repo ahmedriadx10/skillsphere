@@ -111,6 +111,7 @@ const PoupularCourses =  () => {
     <section className="py-20 bg-[#FAF8FF]">
       
       <div className="text-center max-w-xl w-[90%] mx-auto space-y-4">
+          <p className="text-xs font-bold uppercase text-(--primaryViolet) tracking-[2.4px]">MASTER A SKILL</p>
         <h4 className="text-4xl font-bold text-(--on-surface)">Popular Courses</h4>
         <p className="text-(--textVariant)">Curated selection of our most trending and highly-rated learning experiences
 this month.</p>
