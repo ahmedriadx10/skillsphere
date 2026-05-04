@@ -82,12 +82,12 @@ const NewReleases = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 b items-center mt-16">
           
           {/* Left Side: Swiper with SkillSphere Themed Card */}
-          <div className="h-full max-w-85 mx-auto lg:mx-0">
+          <div className="h-full max-w-70 md:max-w-75 w-[90%] mx-auto lg:mx-0 ">
       <Swiper
   effect={'cards'}
   grabCursor={true}
   modules={[EffectCards]}
-  className="mySwiper w-full h-100"
+  className="mySwiper max-w-60 md:max-w-75 h-100"
 
 >
 
