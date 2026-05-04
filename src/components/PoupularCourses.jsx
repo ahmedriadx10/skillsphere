@@ -1,9 +1,14 @@
 import { courseDataGet } from "@/utils/DataFetcher";
 import PopularCourseCard from "./ui/PopularCourseCard";
 
+
+
+
 const PoupularCourses = async () => {
- 
-  const courseData=await courseDataGet()
+
+  
+  
+  const courseData= await courseDataGet()
 
   const topCourse=courseData.filter(course=>course.rating===5)
   console.log(topCourse)

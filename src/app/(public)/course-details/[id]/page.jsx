@@ -1,5 +1,6 @@
 import CourseDetailsShow from "@/components/CourseDetailsShow";
 import { courseDataGet } from "@/utils/DataFetcher";
+import { notFound } from "next/navigation";
 
 const CourseDetails = async ({params}) => {
 
@@ -7,6 +8,9 @@ const CourseDetails = async ({params}) => {
 const courseData=await courseDataGet()
   const exactCourse=courseData.find((course)=>course.id===Number(id))
 
+  if(!exactCourse){
+    notFound()
+  }
  console.log(exactCourse)
 
 
