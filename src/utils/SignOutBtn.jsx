@@ -1,8 +1,9 @@
 "use client";
 import { Button, toast } from "@heroui/react";
 import { authClient } from "@/lib/auth-client";
-import { refresh } from "next/cache";
+
 import { usePathname, useRouter } from "next/navigation";
+import { MdLogout } from "react-icons/md";
 
 
 
@@ -26,7 +27,7 @@ toast.success('Sign out successfull')
       onPress={handleSignOut}
       className={"bg-linear-[90deg,#6B38D4_0%,#BA0035_100%] rounded-lg"}
     >
-      {children}
+        <MdLogout /> {children}
     </Button>
   );
 };

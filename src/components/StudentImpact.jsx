@@ -30,10 +30,11 @@ heights with SkillSphere.</p>
       spaceBetween={20}
       slidesPerView={'auto'}
 loop={true}
-  autoplay={{
-    delay:0,
-    disableOnInteraction:false
-  }}
+  // autoplay={{
+  //   delay:0,
+  //   disableOnInteraction:false
+  // }}
+  autoplay
   freeMode={true}
 
       speed={3000}

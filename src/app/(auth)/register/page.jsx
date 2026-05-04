@@ -43,20 +43,17 @@ export default function RegisterPage() {
       {
         onSuccess: () => {
           route.push("/");
+      toast.success("Sign Up Successfull");
         },
-        onError: () => {},
+        onError: () => {
+
+           toast.danger(`${error.message}`);
+        },
       },
     );
-    if (data) {
-      toast.success("Sign Up Successfull");
-      return
-    }
 
-    if (error) {
-      toast.danger(`${error.message}`);
-      console.log(error);
-      return
-    }
+
+
   };
 
   const handleGoogleSignUp=async()=>{

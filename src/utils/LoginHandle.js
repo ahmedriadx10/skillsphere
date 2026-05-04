@@ -1,4 +1,5 @@
 import { authClient } from "@/lib/auth-client"
+import { toast } from "@heroui/react"
 
 export const loginHandle=async (e)=>{
 
@@ -15,14 +16,14 @@ const { data, error } = await authClient.signIn.email({
     
    ...exactFormData,
         callbackURL: "/",
+}, {
+  onSuccess: (ctx) => {
+            toast.success("Log in Successfull");
+        }
 })
 
 
 
-   if (data) {
-      toast.success("Log in Successfull");
-      return
-    }
 
     if (error) {
       toast.danger(`${error.message}`);
