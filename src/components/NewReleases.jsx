@@ -1,6 +1,6 @@
 "use client";
 
-
+import {motion} from 'motion/react'
 
 // Swiper.js
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -63,7 +63,7 @@ const NewReleases = () => {
       <div className="max-w-7xl mx-auto px-6">
         
      
-        <div className="flex flex-col  gap-5 items-center text-center ">
+        <motion.div className="flex flex-col  gap-5 items-center text-center " initial={{opacity:0,y:30}} whileInView={{opacity:1,y:0}} transition={{duration:0.9}} viewport={{once:true,margin:'-150px'}}>
    
   <p className="text-xs font-bold uppercase text-(--primaryViolet) tracking-[2.4px]">New Releases</p>
 
@@ -76,7 +76,7 @@ const NewReleases = () => {
             architecture to advanced neural networks, our newest courses are engineered by industry
             experts.
           </p>
-        </div>
+        </motion.div>
 
         {/* Layout Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 b items-center mt-16">
@@ -99,7 +99,7 @@ const NewReleases = () => {
           {/* Right Side: Action & Stats with SkillSphere Colors */}
           <div className="flex flex-col gap-10">
             {/* SkillSphere themed info card */}
-            <div className="bg-linear-to-b from-[#6B38D420] border border-(--outline) p-10 shadow-none rounded-3xl">
+            <motion.div whileInView={{opacity:1,y:0}} initial={{opacity:0,y:30}} transition={{duration:0.9}} viewport={{once:true,margin:'-100px'}}  className="bg-linear-to-b from-[#6B38D420] border border-(--outline) p-10 shadow-none rounded-3xl">
               <p className="text-[#374151] text-xl mb-12 font-semibold">
                 Master high-demand skills with our industry-certified curriculum designed for rapid career growth.
               </p>
@@ -111,7 +111,7 @@ const NewReleases = () => {
                   Start Learning Now <span className="text-sm">⚡</span>
               </Button>
               </Link>
-            </div>
+            </motion.div>
 
             {/* Stats Grid using SkillSphere primary colors */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -120,11 +120,11 @@ const NewReleases = () => {
                 { label: "User Rating", value: "4.9/5" },
                 { label: "Support", value: "24h" }
               ].map((stat, i) => (
-                <div key={i} className="py-8 bg-white border border-(--outline) text-center rounded-2xl">
+                <motion.div  whileInView={{opacity:1,y:0}} initial={{opacity:0,y:30}} transition={{duration:0.9}} viewport={{once:true,margin:'-100px'}} key={i}  className="py-8 bg-white border border-(--outline) text-center rounded-2xl">
                   {/* Blue like "169" price in SkillSphere */}
                   <h4 className="text-3xl font-extrabold text-(--primaryViolet)">{stat.value}</h4>
                   <p className="text-[#6B7280] font-medium text-sm mt-1">{stat.label}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

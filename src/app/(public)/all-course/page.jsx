@@ -8,7 +8,7 @@ const AllCourse = async({searchParams}) => {
   const courseData=await courseDataGet()
 const searchParamsGet=await searchParams
 
-const queryParams=searchParamsGet.search
+const queryParams=searchParamsGet?.search
 const exactCourseData=queryParams?courseData.filter((course)=>course.title.toLowerCase().includes(queryParams.toLowerCase())):courseData
 
   

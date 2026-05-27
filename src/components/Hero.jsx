@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Hero = () => {
   const gradientBg='bg-linear-[90deg,#6B38D4_0%,#BA0035_100%] bg-clip-text text-transparent'
   return (
-    <section className="max-w-7xl pl-7 md:pl-8 mx-auto my-12  rounded-2xl  shadow-sm w-[90%] bg-[linear-gradient(90deg,rgba(255,255,255,1),rgba(255,255,255,0.9),rgba(255,255,255,0)),url(/skillsphere-banner.png)] py-40 bg-no-repeat bg-center bg-cover"  >
+    <section  className="max-w-7xl pl-7 md:pl-8 mx-auto my-12  rounded-2xl  shadow-sm w-[90%] bg-[linear-gradient(90deg,rgba(255,255,255,1),rgba(255,255,255,0.9),rgba(255,255,255,0)),url(/skillsphere-banner.png)] py-40 bg-no-repeat bg-center bg-cover"  >
     
 
     {/* hero area main infor */}

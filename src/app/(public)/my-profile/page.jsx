@@ -12,7 +12,7 @@ const MyProfilePage =async () => {
     headers: await headers() 
 })
 
-console.log(session)
+
 
 const user=session?.user
 

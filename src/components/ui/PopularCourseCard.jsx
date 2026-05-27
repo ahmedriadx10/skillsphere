@@ -2,13 +2,13 @@ import { Avatar, Button, Chip } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaRegClock, FaStar } from "react-icons/fa";
-
-const PopularCourseCard = ({course}) => {
+import {motion} from 'motion/react'
+const PopularCourseCard = ({course,inx}) => {
  
  const {id,title,instructor,rating,category,instructor_img,duration,price,image,description}=course
 
   return (
-    <div className="rounded-3xl shadow flex flex-col justify-between gap-3 hover:-translate-y-1 hover:shadow-md transition-transform duration-150">
+    <motion.div initial={{opacity:0,y:30}} viewport={{once:true,margin:'-50px'}} whileInView={{opacity:1,y:0}} transition={{duration:0.9,delay:inx*0.15}}   className="rounded-3xl shadow flex flex-col justify-between gap-3 hover:-translate-y-1 hover:shadow-md transition-transform duration-150">
 
 <div className="relative rounded-t-2xl border h-60 w-full  overflow-hidden">
 <Image src={image} alt={title} fill  className="object-cover" loading="eager"       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"         />
@@ -64,7 +64,7 @@ const PopularCourseCard = ({course}) => {
 
 
 
-    </div>
+    </motion.div>
   );
 };
 

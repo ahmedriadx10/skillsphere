@@ -6,7 +6,7 @@ import { LuPencilLine } from "react-icons/lu";
 
 const LearningTips = () => {
   return (
-    <section className="max-w-7xl mx-auto w-[90%] py-20">
+    <section className="max-w-7xl mx-auto w-[90%] py-20" >
       
 {/* learning tips intro area */}
 
