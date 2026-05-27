@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-
-const InstructorCard = ({instructor}) => {
+import {motion} from 'motion/react'
+const InstructorCard = ({instructor,inx}) => {
   const {id,name,role,image,bio,badges, is_master_instructor}=instructor
   return (
-<div className={`max-w-md md:max-w-82 border border-(--outline) bg-white rounded-4xl shadow overflow-hidden  ${is_master_instructor?'xl:relative lg:top-10':''}`}>
+<motion.div whileInView={{opacity:1,y:0}} initial={{opacity:0,y:30}} transition={{duration:0.9,delay:inx*0.15}} viewport={{once:true,margin:'-100px'}} className={`max-w-md md:max-w-82 border border-(--outline) bg-white rounded-4xl shadow overflow-hidden  ${is_master_instructor?'xl:relative lg:top-10':''}`}>
       {/* Image Section */}
       <div className="relative h-70 w-full  overflow-hidden">
         <Image
@@ -46,7 +46,7 @@ const InstructorCard = ({instructor}) => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
